@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script sr="jqueru-1.12.4.js"></script>
+    <script src="jquery.cookie.js"></script>
+    <script>
+        $(function(){
+            $.cookie("name","lisi",{expires:30});  //增加cookie
+            console.log($.cookie("name"));   //输出cookie
+            $.cookie("name","",{expires:-1});   //删除cookie
+        })
+
+
+
+    </script>
+</body>
+</html>
